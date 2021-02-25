@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>cadastro_cliente</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Dal\" />
+    <Folder Include="Views\Shared\EditorTemplates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+    <PackageReference Include="MySql.Data.Entity" Version="6.10.9" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.11">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.11" />
+    <PackageReference Include="jQuery.UI.Combined" Version="1.12.1" />
+    <PackageReference Include="MyToolkit" Version="2.5.16" />
+    <PackageReference Include="MyToolkit.Extended" Version="2.5.16" />
+    <PackageReference Include="MyToolkit.Http" Version="2.5.16" />
+    <PackageReference Include="MyToolkit.AspNet.Mvc" Version="2.5.16" />
+    <PackageReference Include="MyToolkit.Web" Version="2.5.16" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Telefone\Create.cshtml" />
+  </ItemGroup>
+</Project>
